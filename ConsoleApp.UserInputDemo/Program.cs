@@ -11,6 +11,9 @@
             string lastName = string.Empty;
             int age = 0;
             int retirementAge = 67;
+            decimal salary = 0;
+            char gender = char.MinValue;
+            bool working = true;
 
 
             //Prompt user for input
@@ -27,6 +30,18 @@
 
             age = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Please enter your salary: ");
+
+            salary = Convert.Decimal(Console.ReadLine());
+
+            Console.WriteLine("Please enter your gender (M or F): ");
+
+            gender = Convert.ToChar(Console.ReadLine());
+
+
+            Console.WriteLine("Are you working? (true or false) ");
+
+            working = Convert.ToBoolean(Console.ReadLine());
 
             //Process data
 
