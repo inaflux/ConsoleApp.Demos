@@ -6,16 +6,22 @@
         {
             //Decalre Variables
 
-            string name = string.Empty;
+            string firstName = string.Empty;
+
+            string lastName = string.Empty;
             int age = 0;
             int retirementAge = 67;
 
 
             //Prompt user for input
 
-            Console.WriteLine("Please enter your name: ");          
+            Console.WriteLine("Please enter your first name: ");
 
-            name = Console.ReadLine();
+            firstName = Console.ReadLine();
+
+            Console.WriteLine("Please enter your last name: ");
+
+            lastName = Console.ReadLine();
 
             Console.WriteLine("Please enter your age: ");
 
@@ -29,7 +35,7 @@
 
             //Display Output
 
-            Console.WriteLine($"Your name is: {name}");
+            Console.WriteLine($"Your name is: {firstName} {lastName}");
             Console.WriteLine($"Your age is: {age}");
             Console.WriteLine($"You have {workingYearsLeft} until you can retire");
 
