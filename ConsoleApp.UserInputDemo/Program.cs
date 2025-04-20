@@ -18,30 +18,34 @@
 
             //Prompt user for input
 
-            Console.WriteLine("Please enter your first name: ");
-
+            Console.Write("Please enter your first name: ");
             firstName = Console.ReadLine();
 
-            Console.WriteLine("Please enter your last name: ");
 
+            Console.Write("Please enter your last name: ");
             lastName = Console.ReadLine();
 
-            Console.WriteLine("Please enter your age: ");
 
+            Console.Write("Please enter your age: ");
+            
+            
+            
             age = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Please enter your salary: ");
 
-            salary = Convert.Decimal(Console.ReadLine());
+            Console.Write("Please enter your salary: ");
+            
+            salary = Convert.ToDecimal(Console.ReadLine());
 
-            Console.WriteLine("Please enter your gender (M or F): ");
 
+            Console.Write("Please enter your gender (M or F): ");
             gender = Convert.ToChar(Console.ReadLine());
 
 
-            Console.WriteLine("Are you working? (true or false) ");
 
+            Console.Write("Are you working? (true or false) ");
             working = Convert.ToBoolean(Console.ReadLine());
+
 
             //Process data
 
@@ -53,6 +57,11 @@
             Console.WriteLine($"Your name is: {firstName} {lastName}");
             Console.WriteLine($"Your age is: {age}");
             Console.WriteLine($"You have {workingYearsLeft} until you can retire");
+
+            
+            Console.WriteLine($"Your salary is: {salary}");
+            Console.WriteLine($"Your gender is: {gender}");
+            Console.WriteLine($"It is {working} that you are working");
 
         }
     }
