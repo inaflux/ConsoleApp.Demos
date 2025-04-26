@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.SimpleCalc", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.Loops", "ConsoleApp.Loops\ConsoleApp.Loops.csproj", "{05129660-E780-420D-95B8-F17CA2FF4EDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp.StringManipulation", "ConsoleApp.StringManipulation\ConsoleApp.StringManipulation.csproj", "{21794DAC-DCA3-4C70-9747-96F449267B55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{05129660-E780-420D-95B8-F17CA2FF4EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05129660-E780-420D-95B8-F17CA2FF4EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05129660-E780-420D-95B8-F17CA2FF4EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21794DAC-DCA3-4C70-9747-96F449267B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21794DAC-DCA3-4C70-9747-96F449267B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21794DAC-DCA3-4C70-9747-96F449267B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21794DAC-DCA3-4C70-9747-96F449267B55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
