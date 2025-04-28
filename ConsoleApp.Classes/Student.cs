@@ -6,7 +6,10 @@
         {
             public class Student : Person
             {
-
+                public void GenerateStudentIDNum()
+                {
+                    _idNumber = "STU-" + GetRandomNum();
+                }
             }
         } 
 

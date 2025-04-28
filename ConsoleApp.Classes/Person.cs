@@ -34,8 +34,8 @@ namespace ConsoleApp.Classes
             public DateOnly DateOfBirth { get; set; }
 
             //Field Member
-            private string _taxNumber;
-            private string _idNumber;
+            private string _taxNumber;//becuase private only this class can access it
+            protected string _idNumber = "N/A";// because protected both this class and the child class can access this 
 
 
             public void PrintFullName()
@@ -55,7 +55,7 @@ namespace ConsoleApp.Classes
             {
                 if (string.IsNullOrEmpty(_taxNumber))
                 {
-                    _taxNumber = RandomNumberGenerator.GetInt32(100000, 9999999).ToString();
+                    _taxNumber =  GetRandomNum();
                 }
 
                 else
@@ -68,6 +68,12 @@ namespace ConsoleApp.Classes
             {
                 return _taxNumber;
             }
+
+            public string GetIDNumber()
+            {
+                return _idNumber;
+            }
+
 
             public void PrintDateOfBirth()
             {
@@ -86,6 +92,11 @@ namespace ConsoleApp.Classes
             {
                 var age = year - DateOfBirth.Year;
                 return age;
+            }
+
+            protected string GetRandomNum()
+            {
+                return RandomNumberGenerator.GetInt32(100000, 9999999).ToString();
             }
         } 
 
